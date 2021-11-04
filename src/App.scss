@@ -1,0 +1,78 @@
+@import "./Sass/configurations";
+
+.app {
+  width: 100%;
+  height: 100%;
+
+  &-header {
+    width: 100%;
+    @include FlexBox;
+  }
+
+  .text-header__container {
+    margin: 20px auto;
+    width: 22%;
+    height: 53px;
+    color: $secondary-color;
+    background-color: $bg-color;
+    border-bottom: solid 3px $secondary-color;
+
+    h1 {
+      margin: 7px auto;
+      display: inline-block;
+      text-transform: uppercase;
+      text-align: center;
+      width: 100%;
+      letter-spacing: 3px;
+    }
+  }
+
+  &-main {
+    @include FlexBox(column, flex-start);
+    margin: 20px auto;
+    background-color: $bg-color;
+    width: 50%;
+    min-height: 457px;
+    border-radius: 10px;
+  }
+
+  .container {
+    @include FlexBox;
+    width: 100%;
+    border-bottom: solid 1px $white;
+
+    .img-container {
+      height: 78px;
+      width: 111px;
+      border-radius: 50%;
+      background-color: $secondary-color;
+      margin: -12px -2px;
+      position: relative;
+      top: -21px;
+      left: -14px;
+      .img {
+        width: 95%;
+        position: relative;
+        top: 36px;
+        left: -5px;
+      }
+    }
+
+    .form {
+      height: 46px;
+      width: 100%;
+      @include FlexBox(row, space-around);
+
+      .btn {
+        color: $white;
+        background-color: $btn-color;
+        border: none;
+        border-radius: 8px;
+        height: 30px;
+        width: 129px;
+
+        cursor: pointer;
+      }
+    }
+  }
+}

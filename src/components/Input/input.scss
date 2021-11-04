@@ -1,0 +1,11 @@
+@import "../../Sass/configurations";
+
+.input {
+  height: 20px;
+  width: 355px;
+  border: solid 1px $border-input;
+
+  &:focus {
+    outline: solid 1px $secondary-color;
+  }
+}

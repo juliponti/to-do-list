@@ -1,0 +1,80 @@
+@import "../../Sass/configurations";
+
+.list-item {
+  margin: 5px 0;
+}
+
+.tools-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 9px;
+  padding: 0 29px;
+
+  input {
+    display: none;
+  }
+
+  input:checked ~ .checkmark {
+    background-color: $checkbox-color;
+  }
+
+  input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  & .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  button {
+    height: 25px;
+    width: 31px;
+    border: none;
+    background-color: #bfc0c7;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: #6e768b;
+    }
+  }
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: $white;
+  border: solid 1px #b3bcdb;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #e8ebf5;
+  }
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
