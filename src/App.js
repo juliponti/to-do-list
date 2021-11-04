@@ -32,14 +32,14 @@ function App() {
       <div className="app">
         <header className="app-header">
           <div className="text-header__container">
-            <h1>• To do list •</h1>
+            <h1> To do list </h1>
+          </div>
+          <div className="img-container">
+            <img src={Img} className="img" alt="octopus" />
           </div>
         </header>
         <main className="app-main">
           <div className="container">
-            <div className="img-container">
-              <img src={Img} className="img" alt="octopus" />
-            </div>
             <form className="form" onSubmit={handleSubmit}>
               <Input
                 value={inputValue}
