@@ -16,7 +16,7 @@ function App() {
       title: inputValue,
       done: false
     }
-
+    toDo.title !== ""  &&
     setToDos([...toDos, toDo]);
     setInputValue("");
   }
