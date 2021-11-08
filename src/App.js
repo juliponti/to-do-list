@@ -11,16 +11,27 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    setToDos([...toDos, inputValue]);
+    
+    const toDo = {
+      title: inputValue,
+      done: false
+    }
+
+    setToDos([...toDos, toDo]);
     setInputValue("");
   }
 
   function removeToDo(toDo) {
-    const newList = toDos.filter((item) => item !== toDo);
+    const newList = toDos.filter((item) => item.title !== toDo.title);
     setToDos(newList);
   }
 
-  function taskDone(toDo) {}
+  function taskDone(toDo) {
+    const index = (toDos.indexOf(toDo))
+    const newList = [...toDos]
+    newList[index] = {...toDo, done: !toDo.done}
+    setToDos(newList)
+  }
 
   const contextValue = {
     removeToDo: removeToDo,

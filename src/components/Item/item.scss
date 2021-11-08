@@ -4,6 +4,11 @@
   margin: 5px 0;
 }
 
+.task-done {
+  margin: 5px 0;
+  text-decoration: line-through;
+}
+
 .tools-container {
   display: inline-block;
   position: relative;

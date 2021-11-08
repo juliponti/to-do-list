@@ -7,7 +7,7 @@ function List(props) {
   return (
     <ul className="list">
       {toDos.map((toDo) => (
-        <Item key={toDo} toDo={toDo} />
+        <Item key={toDo.title} toDo={toDo} />
       ))}
     </ul>
   );
