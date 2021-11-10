@@ -11,14 +11,23 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    
+
     const toDo = {
       title: inputValue,
-      done: false
+      done: false,
+    };
+
+    const found = toDos.find((val) => {
+      return val.title == inputValue;
+    });
+
+    if (!found) {
+      toDo.title !== "" && setToDos([...toDos, toDo]);
+      setInputValue("");
+    } else {
+      setInputValue("");
+      alert("Esa tarea ya está escrita");
     }
-    toDo.title !== ""  &&
-    setToDos([...toDos, toDo]);
-    setInputValue("");
   }
 
   function removeToDo(toDo) {
@@ -27,10 +36,10 @@ function App() {
   }
 
   function taskDone(toDo) {
-    const index = (toDos.indexOf(toDo))
-    const newList = [...toDos]
-    newList[index] = {...toDo, done: !toDo.done}
-    setToDos(newList)
+    const index = toDos.indexOf(toDo);
+    const newList = [...toDos];
+    newList[index] = { ...toDo, done: !toDo.done };
+    setToDos(newList);
   }
 
   const contextValue = {
