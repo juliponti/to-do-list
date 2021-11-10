@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/to-do-list/static/css/main.83e397be.chunk.css",
+    "main.js": "/to-do-list/static/js/main.9c4fe906.chunk.js",
+    "main.js.map": "/to-do-list/static/js/main.9c4fe906.chunk.js.map",
+    "runtime-main.js": "/to-do-list/static/js/runtime-main.0101664f.js",
+    "runtime-main.js.map": "/to-do-list/static/js/runtime-main.0101664f.js.map",
+    "static/js/2.4f57915e.chunk.js": "/to-do-list/static/js/2.4f57915e.chunk.js",
+    "static/js/2.4f57915e.chunk.js.map": "/to-do-list/static/js/2.4f57915e.chunk.js.map",
+    "static/js/3.02f2b21f.chunk.js": "/to-do-list/static/js/3.02f2b21f.chunk.js",
+    "static/js/3.02f2b21f.chunk.js.map": "/to-do-list/static/js/3.02f2b21f.chunk.js.map",
+    "index.html": "/to-do-list/index.html",
+    "static/css/main.83e397be.chunk.css.map": "/to-do-list/static/css/main.83e397be.chunk.css.map",
+    "static/js/2.4f57915e.chunk.js.LICENSE.txt": "/to-do-list/static/js/2.4f57915e.chunk.js.LICENSE.txt",
+    "static/media/cyborg-octopus.348f3655.png": "/to-do-list/static/media/cyborg-octopus.348f3655.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0101664f.js",
+    "static/js/2.4f57915e.chunk.js",
+    "static/css/main.83e397be.chunk.css",
+    "static/js/main.9c4fe906.chunk.js"
+  ]
+}
