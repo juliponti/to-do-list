@@ -36,7 +36,7 @@
       margin: -12px 12px;
       position: relative;
       top: -2px;
-      left: -23px;
+      left: -29px;
       .img {
         width: 95%;
         position: relative;
@@ -68,8 +68,8 @@
       @include FlexBox(row, space-around);
 
       .input {
-       width: 70% ;
-       margin: 0 10px;
+        width: 70%;
+        margin: 0 10px;
       }
       .btn {
         color: $white;
@@ -85,4 +85,3 @@
     }
   }
 }
-
